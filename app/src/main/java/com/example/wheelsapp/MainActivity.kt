@@ -27,10 +27,10 @@ class MainActivity : AppCompatActivity() {
             println(correoInsti.text.length)
         }
 
-        val authorizationAPI = RetrofitHelper.getInstance().create(APIAuthService::class.java)
-        val body = UserRequest("Admmin@mail.com","Admmin")
-        val token = authorizationAPI.getToken(body)
-        println("Si la autenticación esta bien: " + token.body()?.tokenAuth)
+        //val authorizationAPI = RetrofitHelper.getInstance().create(APIAuthService::class.java)
+        //val body = UserRequest("Admmin@mail.com","Admmin")
+        //val token = authorizationAPI.getToken(body)
+        //println("Si la autenticación esta bien: " + token.body()?.tokenAuth)
     }
 
 
