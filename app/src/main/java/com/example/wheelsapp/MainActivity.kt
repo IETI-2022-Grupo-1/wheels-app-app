@@ -1,10 +1,17 @@
 package com.example.wheelsapp
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
+import com.example.wheelsapp.entities.api_request.UserRequest
+import com.example.wheelsapp.services.APIAuthService
+import com.example.wheelsapp.utils.RetrofitHelper
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +26,12 @@ class MainActivity : AppCompatActivity() {
             if(correoInsti.text.length==0) correoInsti.setError("Campo vacio")
             println(correoInsti.text.length)
         }
-        correoInsti.setSelection(3)
 
+        val authorizationAPI = RetrofitHelper.getInstance().create(APIAuthService::class.java)
+        val body = UserRequest("Admmin@mail.com","Admmin")
+        val token = authorizationAPI.getToken(body)
+        println("Si la autenticación esta bien: " + token.body()?.tokenAuth)
     }
+
+
 }

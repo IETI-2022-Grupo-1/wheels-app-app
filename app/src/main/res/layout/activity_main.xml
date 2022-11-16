@@ -17,8 +17,8 @@
 
 
         android:fontFamily="@font/open_sans_light"
-        android:text="Registrate para ingresar"
         android:shadowColor="@color/white_wheels"
+        android:text="Registrate para ingresar"
         android:textColor="@color/white_wheels"
         android:textSize="26sp"
         tools:layout_editor_absoluteX="63dp"
@@ -107,8 +107,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MultiAutoCompleteTextView"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.5"
+        tools:layout_editor_absoluteX="59dp" />
     +
 
 
