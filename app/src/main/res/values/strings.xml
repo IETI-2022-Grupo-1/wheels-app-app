@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WheelsApp</string>
+    <string name="preference_file_key"/>
+    <string name="ingresa_tus_datos">Ingresa tus datos</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="escribe_tu_correo_institucional">Escribe tu correo institucional</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
 </resources>
