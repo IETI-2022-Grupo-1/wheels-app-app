@@ -2,15 +2,14 @@ package com.example.wheelsapp.entities.api_responses;
 
 import java.util.*;
 
-public class AuthResponse {
+public class LoginResponse {
 
     private String token;
     private Date expirationDate;
 
-    public AuthResponse(String token, Date expirationDate) {
+    public LoginResponse(String token, Date expirationDate) {
         this.token = token;
         this.expirationDate = expirationDate;
-        System.out.println(token+" se esta creando el token");
     }
     public String getToken() {
         return token;

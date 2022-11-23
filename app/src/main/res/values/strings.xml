@@ -1,9 +1,26 @@
 <resources>
     <string name="app_name">WheelsApp</string>
-    <string name="preference_file_key"/>
+    <string name="preference_file_key" />
     <string name="ingresa_tus_datos">Ingresa tus datos</string>
     <string name="nombre_de_usuario">Nombre de usuario</string>
     <string name="escribe_tu_correo_institucional">Escribe tu correo institucional</string>
     <string name="contraseña">Contraseña</string>
     <string name="ingresar">Ingresar</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Historial</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Perfil</string>
+    <string name="profile_editarperfil">Editar Perfil</string>
+    <string name="profile_logout">Cerrar sesión</string>
+    <string name="profile_institucion">Institución</string>
+    <string name="profile_email">Correo electronico</string>
+    <string name="profile_contacto">Contacto</string>
+    <string name="profile_vehiculos">Vehiculos</string>
+    <string name="register_registraringresar">Registrate para ingresar</string>
+    <string name="register_universidad">Universidad</string>
+    <string name="register_conductor">Resgitrar como conductor</string>
+    <string name="register_pasajero">Registrar como pasajero</string>
+    <string name="login_no_user_wheels">¿No eres un usuario de Wheels?</string>
+    <string name="login_registrar">Registrar aquí</string>
 </resources>

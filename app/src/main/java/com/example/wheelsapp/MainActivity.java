@@ -1,23 +1,8 @@
 package com.example.wheelsapp;
 
 import android.os.Bundle;
-import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.wheelsapp.entities.api_request.UserRequest;
-import com.example.wheelsapp.entities.api_responses.AuthResponse;
-import com.example.wheelsapp.services.APIAuthService;
-import com.example.wheelsapp.utils.RetrofitHelper;
-
-import java.io.IOException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 
 public class MainActivity extends AppCompatActivity {

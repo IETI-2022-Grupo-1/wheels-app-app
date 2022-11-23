@@ -10,8 +10,8 @@ import android.widget.EditText;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.wheelsapp.entities.api_request.UserRequest;
-import com.example.wheelsapp.entities.api_responses.AuthResponse;
+import com.example.wheelsapp.entities.api_request.LoginRequest;
+import com.example.wheelsapp.entities.api_responses.LoginResponse;
 import com.example.wheelsapp.services.APIAuthService;
 import com.example.wheelsapp.utils.RetrofitHelper;
 
@@ -26,20 +26,21 @@ public class LoginActivity extends AppCompatActivity {
     private final ExecutorService executorService = Executors.newFixedThreadPool(1);
     APIAuthService apiAuthService;
 
+
     @Override
     protected void onCreate(Bundle saveInstanceSate) {
         super.onCreate(saveInstanceSate);
         setContentView(R.layout.activity_login);
-        //login();
     }
 
-    public void login(View v) {
+    public void logIn(View v) {
         EditText emailEditText = findViewById(R.id.editTextTextEmailAddress2);
         EditText passwordEditText = findViewById(R.id.editTextTextPassword2);
+        final LoginActivity loginActivityObject = this;
 
         final String email = emailEditText.getText().toString().trim();
         final String password = passwordEditText.getText().toString().trim();
-        final LoginActivity loginActivityObject = this;
+
 
         if (email.isEmpty()) {
             emailEditText.setError("Email can't be empty");
@@ -52,8 +53,8 @@ public class LoginActivity extends AppCompatActivity {
                 public void run() {
                     try {
                         apiAuthService = RetrofitHelper.getInstance().create(APIAuthService.class);
-                        Response<AuthResponse> response = apiAuthService.login(new UserRequest(email, password)).execute();
-                        AuthResponse token = response.body();
+                        Response<LoginResponse> response = apiAuthService.login(new LoginRequest(email, password)).execute();
+                        LoginResponse token = response.body();
                         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
 
                         if (token.getToken() == null) {
@@ -66,9 +67,10 @@ public class LoginActivity extends AppCompatActivity {
                             return;
                         }
                         SharedPreferences.Editor editor = sharedPreferences.edit();
-                        editor.putString("TOKEN_KEY", "Bearer" + token.getToken());
+                        editor.putString("TOKEN_KEY", "Bearer " + token.getToken());
+                        editor.commit();
 
-                        Intent intent = new Intent(loginActivityObject, MainActivity.class);
+                        Intent intent = new Intent(loginActivityObject, MainActivity2.class);
                         startActivity(intent);
 
                     } catch (IOException e) {
@@ -78,4 +80,11 @@ public class LoginActivity extends AppCompatActivity {
             });
         }
     }
+
+    public void register(View v) {
+        final LoginActivity loginActivityObject = this;
+        Intent intent = new Intent(loginActivityObject, RegisterActivity.class);
+        startActivity(intent);
+    }
+
 }
