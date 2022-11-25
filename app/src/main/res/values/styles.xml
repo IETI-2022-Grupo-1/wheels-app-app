@@ -9,4 +9,15 @@
     <style name="SplashTheme" parent="Theme.WheelsApp">
         <item name="android:windowBackground">@drawable/splashscreenbg</item>
     </style>
+
+    <style name="mySpinnerItemStyle" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:textColor">@color/white_wheels</item>
+    </style>
+    
+    <style name="Theme.WheelsApp.Temapopup">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+
+    </style>
 </resources>
