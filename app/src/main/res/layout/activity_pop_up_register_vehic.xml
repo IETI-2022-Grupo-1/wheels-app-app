@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUpRegisterVehic">
+
+    <TextView
+        android:id="@+id/textViewVehiNumber"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/popup_vehi_avalai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextVehiModel"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="304dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextVehiNumber"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextVehiVehiNumber"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="224dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiVehiNumber_des"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/popup_vehi_palca_des"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiModel_des"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="288dp"
+        android:text="@string/popup_vehi_model_des"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiVehi"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/popup_vehi_des_vehi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextVehiVehi"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiModel"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="268dp"
+        android:text="@string/popup_vehi_model"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiVehiNumber"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="188dp"
+        android:text="@string/popup_vehi_palca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiVehi_des"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/popup_vehi_des_vehi_des"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="372dp"
+        android:text="@string/popup_user_continuar"
+        android:onClick="popRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewVehiNumber_des"
+        android:layout_width="320dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/popup_vehi_avalai_des"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

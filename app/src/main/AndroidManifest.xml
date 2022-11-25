@@ -19,7 +19,6 @@
             android:name=".LaunchActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,6 +32,10 @@
         <activity android:name=".MainActivity2" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".PopUpRegisterUser"
+            android:theme="@style/Theme.WheelsApp.Temapopup"/>
+        <activity android:name=".PopUpRegisterVehic"
+            android:theme="@style/Theme.WheelsApp.Temapopup"/>
 
         <meta-data
             android:name="preloaded_fonts"

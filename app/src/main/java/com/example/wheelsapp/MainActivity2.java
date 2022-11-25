@@ -80,7 +80,6 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-
         StrictMode.setThreadPolicy(policy);
 
         parseJwt();

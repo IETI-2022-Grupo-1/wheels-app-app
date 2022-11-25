@@ -1,10 +1,13 @@
 package com.example.wheelsapp.ui.profile;
 
+import android.widget.TextView;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.example.wheelsapp.MainActivity2;
+import com.example.wheelsapp.R;
 
 public class ProfileViewModel extends ViewModel {
 

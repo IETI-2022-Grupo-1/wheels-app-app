@@ -21,6 +21,21 @@
     <string name="register_universidad">Universidad</string>
     <string name="register_conductor">Resgitrar como conductor</string>
     <string name="register_pasajero">Registrar como pasajero</string>
+    <string name="register_wheels">¿Ya estas registrado en Wheels?</string>
+    <string name="register_login">Ingresa aquí</string>
     <string name="login_no_user_wheels">¿No eres un usuario de Wheels?</string>
     <string name="login_registrar">Registrar aquí</string>
+    <string name="popup_user_firstname">Nombre(s)</string>
+    <string name="popup_user_lastname">Apellidos</string>
+    <string name="popup_user_phone">Celular</string>
+    <string name="popup_user_continuar">Registrar</string>
+    <string name="popup_vehi_avalai">Total de asientos disponibles</string>
+    <string name="popup_vehi_avalai_des">¿Cuantas personas puedes llevar?</string>
+    <string name="popup_vehi_des_vehi">Descripcion del vehiculo</string>
+    <string name="popup_vehi_des_vehi_des">Nissan March Azul</string>
+    <string name="popup_vehi_palca">Placa del vehiculo</string>
+    <string name="popup_vehi_palca_des">ABC123</string>
+    <string name="popup_vehi_model">Modelo del vehiculo</string>
+    <string name="popup_vehi_model_des">2022</string>
+    <string name="popup_vehi_continuar">Continuar</string>
 </resources>

@@ -99,8 +99,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-
-
     <Button
         android:id="@+id/button"
         style="?attr/materialButtonOutlinedStyle"
@@ -114,6 +112,7 @@
         android:textAllCaps="false"
         android:textColor="@color/orange_wheels"
         android:textSize="20sp"
+        android:onClick="popRegisterVehic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@color/orange_wheels"
@@ -126,7 +125,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="540dp"
-        android:onClick="logOut"
+        android:onClick="popRegisterUser"
         android:text="@string/register_pasajero"
         android:textAlignment="center"
         android:textAllCaps="false"
@@ -139,10 +138,43 @@
 
     <Spinner
         android:id="@+id/spinner"
+        style="@android:style/Widget.Holo.Light.Spinner"
         android:layout_width="324dp"
         android:layout_height="45dp"
         android:layout_marginTop="404dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="325dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="604dp"
+        android:text="@string/register_wheels"
+        android:textAlignment="center"
+        android:textColor="@color/white_wheels"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="325dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="616dp"
+        android:clickable="true"
+        android:onClick="login"
+        android:text="@string/register_login"
+        android:textAlignment="center"
+        android:textColor="@color/orange_wheels"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
