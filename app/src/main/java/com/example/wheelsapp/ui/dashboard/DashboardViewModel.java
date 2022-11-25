@@ -1,5 +1,8 @@
 package com.example.wheelsapp.ui.dashboard;
 
+import android.widget.TableLayout;
+
+import androidx.cardview.widget.CardView;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
