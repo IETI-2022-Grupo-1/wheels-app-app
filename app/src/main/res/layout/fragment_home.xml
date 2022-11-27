@@ -7,20 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="142dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="32dp"
-        android:backgroundTint="@color/pink_wheels"
-        android:onClick="conductor"
-        android:text="@string/home_conductor"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listRecyclerView"
-        app:layout_constraintVertical_bias="0.3" />
-
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
@@ -34,30 +20,16 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listRecyclerView"
-        android:layout_width="346dp"
-        android:layout_height="552dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="142dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/blue_wheels"
-        android:text="@string/home_create_route"
-        android:visibility="invisible"
-        android:onClick="createRoute"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listRecyclerView"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
     <!--
     <ScrollView
         android:layout_width="match_parent"

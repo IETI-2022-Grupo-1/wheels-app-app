@@ -38,7 +38,4 @@
     <string name="popup_vehi_model">Modelo del vehiculo</string>
     <string name="popup_vehi_model_des">2022</string>
     <string name="popup_vehi_continuar">Continuar</string>
-    <string name="home_conductor">Ver como conductor</string>
-    <string name="home_pasajero">Ver como pasajero</string>
-    <string name="home_create_route">Crear ruta</string>
 </resources>
