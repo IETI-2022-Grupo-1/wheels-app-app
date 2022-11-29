@@ -9,7 +9,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -20,7 +19,6 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.wheelsapp.databinding.ActivityMain2Binding;
 import com.example.wheelsapp.entities.api_responses.UserResponse;
 import com.example.wheelsapp.services.UserService;
-import com.example.wheelsapp.ui.home.HomeFragment;
 import com.example.wheelsapp.utils.RetrofitHelper;
 import com.example.wheelsapp.utils.RoleEnum;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -141,23 +139,6 @@ public class MainActivity2 extends AppCompatActivity {
         finish();
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
-    }
-
-    public void conductor(View v) {
-        Button button1 = findViewById(R.id.button4);
-        Button button2 = findViewById(R.id.button5);
-        if (button2.getVisibility() == View.VISIBLE) {
-            button2.setVisibility(View.INVISIBLE);
-            button1.setText(R.string.home_conductor);
-        } else {
-            button2.setVisibility(View.VISIBLE);
-            button1.setText(R.string.home_pasajero);
-        }
-    }
-
-    public void createRoute(View v) {
-        HomeFragment homeFragment = new HomeFragment();
-        homeFragment.connect();
     }
 
     public ActivityMain2Binding getBinding() {
