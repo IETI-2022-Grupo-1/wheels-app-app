@@ -63,5 +63,4 @@ public class DashAdapter extends RecyclerView.Adapter<DashAdapter.ViewHolder>{
             stop3.setText(item.getStop3());
         }
     }
-
 }

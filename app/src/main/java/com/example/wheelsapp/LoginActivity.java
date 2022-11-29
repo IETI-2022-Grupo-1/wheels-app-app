@@ -26,7 +26,6 @@ public class LoginActivity extends AppCompatActivity {
     private final ExecutorService executorService = Executors.newFixedThreadPool(1);
     APIAuthService apiAuthService;
 
-
     @Override
     protected void onCreate(Bundle saveInstanceSate) {
         super.onCreate(saveInstanceSate);
@@ -85,5 +84,4 @@ public class LoginActivity extends AppCompatActivity {
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }
-
 }

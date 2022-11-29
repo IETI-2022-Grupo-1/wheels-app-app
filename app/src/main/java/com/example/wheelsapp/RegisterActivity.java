@@ -1,33 +1,32 @@
 package com.example.wheelsapp;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import java.io.IOException;
+
 import android.os.Bundle;
-import android.os.StrictMode;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.EditText;
+import android.os.StrictMode;
 import android.widget.Spinner;
+import android.content.Intent;
 import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.ArrayAdapter;
+import android.annotation.SuppressLint;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.wheelsapp.services.UserService;
+import com.example.wheelsapp.services.VehiService;
+import com.example.wheelsapp.utils.RetrofitHelper;
+import com.example.wheelsapp.services.APIAuthService;
 import com.example.wheelsapp.databinding.ActivityMain2Binding;
 import com.example.wheelsapp.entities.api_request.LoginRequest;
 import com.example.wheelsapp.entities.api_request.UserRequest;
 import com.example.wheelsapp.entities.api_request.VehiRequest;
 import com.example.wheelsapp.entities.api_responses.LoginResponse;
 import com.example.wheelsapp.entities.api_responses.UserResponse;
-import com.example.wheelsapp.services.APIAuthService;
-import com.example.wheelsapp.services.UserService;
-import com.example.wheelsapp.services.VehiService;
-import com.example.wheelsapp.utils.RetrofitHelper;
-
-import java.io.IOException;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -59,8 +58,6 @@ public class RegisterActivity extends AppCompatActivity {
         String[] option = {"Escuela Colombiana de Ingenieria Julio Garavito"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, option);
         spinner.setAdapter(adapter);
-
-
     }
 
     public void popRegisterUser(View v) {

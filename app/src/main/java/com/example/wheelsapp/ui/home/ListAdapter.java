@@ -66,5 +66,4 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder>{
             model.setText(item.getModel());
         }
     }
-
 }
