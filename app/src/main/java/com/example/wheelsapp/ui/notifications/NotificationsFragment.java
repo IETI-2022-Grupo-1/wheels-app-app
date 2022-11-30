@@ -14,7 +14,9 @@ import com.example.wheelsapp.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
+
     private FragmentNotificationsBinding binding;
+
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class NotificationsFragment extends Fragment {
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
+
 
     @Override
     public void onDestroyView() {
