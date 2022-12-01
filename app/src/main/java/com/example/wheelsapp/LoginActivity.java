@@ -35,15 +35,15 @@ public class LoginActivity extends AppCompatActivity {
     public void logIn(View v) {
         EditText emailEditText = findViewById(R.id.editTextTextEmailAddress2);
         EditText passwordEditText = findViewById(R.id.editTextTextPassword2);
+        
         final LoginActivity loginActivityObject = this;
-
         final String email = emailEditText.getText().toString().trim();
         final String password = passwordEditText.getText().toString().trim();
-
 
         if (email.isEmpty()) {
             emailEditText.setError("Email can't be empty");
         }
+        
         if (password.isEmpty()) {
             passwordEditText.setError("Password can't be empty");
         } else {

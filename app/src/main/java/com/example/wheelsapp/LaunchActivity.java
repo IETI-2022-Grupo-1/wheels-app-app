@@ -27,13 +27,13 @@ public class LaunchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-
         setTheme(R.style.Theme_WheelsApp);
 
         super.onCreate(savedInstanceState);
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.preference_file_key), Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove(TOKEN_KEY);
+
         try {
 
             if (sharedPreferences.contains(TOKEN_KEY)) {
@@ -58,7 +58,5 @@ public class LaunchActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
     }
 }

@@ -29,7 +29,6 @@ import com.example.wheelsapp.entities.api_responses.LoginResponse;
 import com.example.wheelsapp.entities.api_responses.UserResponse;
 
 public class RegisterActivity extends AppCompatActivity {
-
     private EditText emailEditText;
     private EditText passwordEditText;
     private Spinner spinner;

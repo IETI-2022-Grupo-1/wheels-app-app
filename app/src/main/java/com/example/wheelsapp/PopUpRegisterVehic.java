@@ -9,7 +9,6 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PopUpRegisterVehic extends AppCompatActivity {
-
     private EditText editTextVehiModel;
     private EditText editTextVehiNumber;
     private EditText editTextVehiVehiNumber;
