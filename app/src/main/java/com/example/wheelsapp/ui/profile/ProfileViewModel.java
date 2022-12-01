@@ -22,10 +22,10 @@ public class ProfileViewModel extends ViewModel {
         mTextEmail.setValue(MainActivity2.getUser().getEmail());
     }
 
-
     public LiveData<String> getText() {
         return mText;
     }
+
     public LiveData<String> getTextEmail() {
         return mTextEmail;
     }
